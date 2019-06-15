@@ -1,0 +1,19 @@
+dia 05 e 06 de novembro - Primeira entrega
+	- Apresentação do projeto
+		- Objetivos de negócio 
+		- Atributos de qualidade
+		- Requisitos e Restrições arquiteturais
+		- o máximo de informação possível
+
+	
+	- Apresentação das Visões Modulares
+
+dia 19 e 20 de novembro - Segunda entrega
+	- Apresentação da(s) visão(ões) de C&C
+	- Correção das visões modulares
+
+
+dia 3 e 4 de dezembro - Terceira entrega
+	- Apresentação da(s) visão(ões) de alocação de recursos
+	- Apresentação do Software (MVP)
+	- Entrega da documentação completa de arquitetura

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http//thymeleaf.org"
+	  xmlns:layout="http//www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+   
+    <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<nav class="teal lighten-2">
+		<div class="nav-wrapper">
+	      	<ul id="nav-mobile" class="left hide-on-med-and-down">
+	        	<li><a href="/">Home</a></li>
+	      		<li sec:authorize="isAuthenticated()"><a href="/usuario/contas">Contas</a></li>
+	      		<li sec:authorize="isAuthenticated()"><a href="/recebedor/listar">Recebedores</a></li>
+	     	</ul>
+	     	<ul id="nav-mobile" class="right hide-on-med-and-down">
+	        	<li sec:authorize="!isAuthenticated()"><a href="/usuario/cadastro">Cadastre-se</a></li>
+	      		<li sec:authorize="!isAuthenticated()"><a href="/login">Login</a></li>
+	      		<li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
+	     	</ul>
+	   	</div>
+	</nav>
+	<div class="container">
+	<h2>MVP-MyDebt</h2>
+	
+	<p>	O sistema MyDebt surge para tornar mais fácil o gerenciamento de contas do dia a dia, 
+		reduzindo seu tempo lado a lado com os débitos, que te faz ter mais tempo para fazer 
+		o que gosta e com um bônus: sem a preocupação de ficar decorando datas de vencimento e, 
+		por estresse, acabar esquecendo alguma!</p>
+		
+		
+	<p>	O sistema conta com funcionalidades de cadastro de contas, lembrete de conta a vencer por email, 
+	histórico de contas pagas, cadastro de recebedores de contas, upload de boletos de pagamento, 
+	visualização de boletos para fácil impressão, entre outras funcionalidades que facilitarão sua vida!</p>
+	
+	<p>O sistema ao avisar sobre uma conta, também dará a opção para o usuário copiar o código de barras 
+	cadastrado com apenas um clique. Após isso ele poderá selecionar o internet banking que preferir e será 
+	redirecionado com facilidade para realizar o pagamento de sua conta.</p>
+	
+	<p>O usuário após cadastrar sua conta, também poderá cadastrar os melhores dias para ser lembrado. 
+	Por padrão o MyDebt avisará exatamente no dia anterior e no dia do vencimento da conta. Tudo isso 
+	de maneira sutil para não estressar o usuário, que já tem várias outras contas para pagar. Sabemos 
+	que contas a pagar não é um dos assuntos mais satisfatórios e respeitamos isso.</p>
+	
+	<p>Mais informações sobre a arquitetura desse sistema você encontra aqui: 
+	<a target="_blank" href="https://drive.google.com/open?id=1KNMuw13flfFIT0ItnYsKiDxE_S206zdSIQRLv7Wy6CM"> 
+	Documento de arquitetura</a></p>
+	
+	<p>Você poderá acessar o código do projeto no GitHub, através do link: <a target="_blank" href="https://github.com/JonasLopesdoO/MVP-MyDebt">
+	MyDebt</a></p>
+	
+	<p>OBS: Trabalho da Disciplina de Arquitetura de Software, 6º Semestre do curso de 
+	Engenharia de Software - UFC - Quixadá</p>
+	
+	</div>
+	
+<!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	 <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
